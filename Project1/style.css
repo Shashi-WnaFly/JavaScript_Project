@@ -9,5 +9,8 @@ body{
 }
 
 .container{
-    background-color: gradient();
+    background-image: gradient(red, pink);
+    max-width: 90%;
+    width: 375px;
+    margin: auto;
 }
