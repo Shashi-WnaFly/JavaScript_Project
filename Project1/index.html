@@ -5,11 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <input type="text" placeholder="Enter Your City">
-        <button><img src="./weather-app-img/images/search.png"></button>
+
+        <div class="search-bar">
+            <input id="search" type="text" placeholder="Enter Your City" spellcheck="false">
+            <button><img id="search-icon" src="./weather-app-img/images/search.png"></button>
+        </div>
+
+        <div class="weather">
+            <img class="weather-icon" src="./weather-app-img/images/clouds.png">
+            <p class="temp">22°C</p>
+            <p class="city">Ranchi</p>
+            
+            <div class="details">
+    
+                <img src="./weather-app-img/images/humidity.png">
+                <div class="humidity">
+                    <p class="value details-text">45%</p>
+                    <p class="details-text">Humidity</p>
+                </div>
+    
+                <img src="./weather-app-img/images/wind.png">
+                <div class="speed">
+                    <p class="kilo details-text">5 km/h</p>
+                    <p class="details-text">Wind Speed</p>
+                </div>
+    
+            </div>
+        </div>
+
     </div>
     
 </body>
