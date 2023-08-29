@@ -64,7 +64,6 @@ body{
 
 .temp{
     font-size: 80px;
-    /* margin-top: -10px; */
 }
 
 .city{
@@ -74,23 +73,38 @@ body{
 
 .details{
     display: flex;
+    margin-top: 50px;
     justify-content: space-between;
-    align-items: center;
+}
+
+.col{
+    display: flex;
     font-size: 17px;
     text-align: left;
-    margin-top: 50px;
+    align-items: center;
+    line-height: 29px;
+    margin-right: 20px;
+    
 }
 
-.details img{
+.col img{
     width: 40px;
     margin-left: 20px;
+    margin-right: 15px;
 }
 
-.humidity, .speed{
-    margin-top: -10px;
-    margin-right: 20px;
-}
-
-.kilo, .value{
+#wind, #humidity{
     font-size: 28px;
+}
+
+.error{
+    text-align: left;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+.weather{
+    display: none;
 }
