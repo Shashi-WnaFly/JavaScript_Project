@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do-List</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     
@@ -15,9 +16,12 @@
             <h2>To-Do-List <img src="./images/to-do-list.png"></h2>
                 
             <div class="task">
-                <input type="text" id="addText" placeholder="Enter your task">
-                <button id="addTask">Add</button>
+                <input type="text" id="input-text" placeholder="Enter your task">
+                <button id="addTask" onclick="addTask()">Add</button>
             </div>
+            <ul class="taskList">
+                
+            </ul>
         </div>
     </div>
 </body>
