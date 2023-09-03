@@ -26,7 +26,7 @@
     align-items: center;
     margin-left: 15px;
     font-weight: 700;
-    color: #3a8606;
+    color: #2d6b03;
     margin-bottom: 20px;
 }
 
@@ -62,7 +62,7 @@
     outline: none;
     font-size: 16px;
     cursor: pointer;
-    background: #55ac19;
+    background: #4b9917;
     color: #fff;
 }
 
@@ -104,7 +104,6 @@
     border-radius: 6px;
     font-size: 22px;
     line-height: 29px;
-    color: #555;
     cursor: pointer;
     border: none;
     outline: none;
@@ -116,5 +115,9 @@
 }
 
 #task-List li span:active {
+    opacity: 0.8;
+}
+
+.task button:active{
     opacity: 0.8;
 }
