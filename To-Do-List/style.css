@@ -6,19 +6,32 @@
 }
 
 .container {
+    display: flex;
+    align-items: center;
     background: linear-gradient(135deg, #153677, #4e085f);
     width: 100%;
     height: 100vh;
     padding: 10px;
 }
 
-.toDoList {
-    max-width: 540px;
+.box{
     width: 100%;
-    margin: 100px auto 20px;
+    max-width: 540px;
+    height: 85%;
+    margin: auto;
+    border-radius: 15px;
+    overflow: auto;
+    position: relative;
+}
+
+.toDoList {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    z-index: 2;
+    border-radius: 15px 15px 0px 0px;
     padding: 30px;
     background-color: #fff;
-    border-radius: 15px;
 }
 
 .toDoList h2 {
@@ -52,7 +65,7 @@
     outline: none;
     background: transparent;
     font-size: 16px;
-
+    
 }
 
 .task button {
@@ -65,6 +78,11 @@
     background: #4b9917;
     color: #fff;
 }
+
+ #list{
+    background: #fff;
+    overflow: scroll;
+ }
 
 #task-List li {
     list-style: none;
@@ -120,4 +138,8 @@
 
 .task button:active{
     opacity: 0.8;
+}
+
+.task button:hover{
+    background: #469213;
 }
