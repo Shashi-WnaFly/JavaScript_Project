@@ -21,8 +21,7 @@ h1{
 
 #random_txt{
     color: green;
-    text-decoration: underline;
-    /* line-: 50px; */
+    border-bottom: 4px solid #007C4A;
 }
 
 img{
@@ -38,7 +37,7 @@ input{
     font-size: 16px;
 }
 
-#copy img{
+#input_copy img{
     width: 34px;
     position: absolute;
     padding: 8px;
@@ -46,8 +45,9 @@ input{
     border-bottom-right-radius: 5px;
 }
 
-#copy img:hover{
+#input_copy img:hover{
     background-color: #ebe7e7;
+    cursor: pointer;
 }
 
 button{
@@ -63,6 +63,7 @@ button{
     background-color: #007C4A;
     border-radius: 5px;
     color: #fff;
+    cursor: pointer;
 }
 
 button img{

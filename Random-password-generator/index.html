@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Generate a <br><span id="random_txt">Random Password</span></h1>
-        <div id="copy"><input type="text" placeholder="Password"><img src="./images/copy.png"></div>
-        <button><img src="./images/flash (1).png" alt="">Generate Password</button>
+        <div id="input_copy">
+            <input type="text" placeholder="Password" id="password">
+            <img src="./images/copy.png" id="copy">
+        </div>
+        <button onclick="createPassword()"><img src="./images/flash (1).png" alt="">Generate Password</button>
     </div>
 </body>
 </html>
