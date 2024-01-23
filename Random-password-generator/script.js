@@ -24,8 +24,10 @@ function createPassword(){
     pass = null;
 }
 
-copi.addEventListener( () => {
-    password.select();
-    // navigator.clipboard.writeText(password.value);
-    // document.execCommand("copy");
+copi.addEventListener( 'click', () => {
+    // password.select();
+    // document.execCommand("copy"); so, this method is deprecated.
+    navigator.clipboard.writeText(password.value);
+    password.value = "";
+    alert("Copied");
 })

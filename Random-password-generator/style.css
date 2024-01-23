@@ -30,7 +30,8 @@ img{
 }
 
 input{
-    padding: 1rem 16rem 1rem 1rem;
+    padding: 1rem;
+    width: 70%;
     border-radius: 5px 0px 0px 5px;
     border: none;
     outline: none;
@@ -38,7 +39,7 @@ input{
 }
 
 #input_copy img{
-    width: 34px;
+    width: 35px;
     position: absolute;
     padding: 8px;
     border-top-right-radius: 5px;
@@ -69,5 +70,13 @@ button{
 button img{
     margin-right: 6px;
     width: 28px;
-    background-color: #007C4A;
+    background: transparent;
+}
+
+button:hover{
+    background-color: #007c4adc;
+}
+
+button:active{
+    box-shadow: 2px 2px 2px 1px #032d53;
 }
