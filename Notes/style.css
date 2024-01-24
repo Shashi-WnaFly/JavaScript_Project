@@ -7,7 +7,7 @@
 }
 
 .container{
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     background-image: linear-gradient(135deg, #fd6fff, #43e6ed);
     padding: 3rem 10rem;
@@ -23,7 +23,7 @@
     align-items: center;
 }
 
-button{
+#createBtn{
     border: 0;
     outline: 0;
     background-image: linear-gradient(#362fb7,#4787ed);
@@ -31,12 +31,17 @@ button{
     text-align: center;
     display: flex;
     align-items: center;
-    padding: 8px 18px;
+    padding: 12px 20px;
     border-radius: 24px;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
-button img{
+#createBtn:hover{
+    background-image: linear-gradient(135deg, #fd6fffc4, #43e6ed);
+}
+
+#createBtn img{
     width: 28px;
     margin-right: 4px;
 }
@@ -51,4 +56,23 @@ button img{
     padding: 1rem;
     margin-top: 1rem;
     border-radius: 5px;
+    position: relative;
+}
+
+.input_box img{
+    position: absolute;
+    width: 34px;
+    bottom: 6px;
+    right: 6px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.input_box img:hover{
+    background-color: #fdd8fb;
+}
+
+.input_box img:active{
+    background-color: #d1c8c8;
 }
