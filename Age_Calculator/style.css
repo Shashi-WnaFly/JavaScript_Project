@@ -40,6 +40,19 @@ h1 span{
     outline: 0;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
+}
+
+.box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
 }
 
 #cal{
@@ -54,4 +67,19 @@ h1 span{
 
 #cal:hover{
     background-color: #f9f896;
+}
+
+#cal:active{
+    color: #fff;
+    background: linear-gradient(135deg, #8cff00bb, #f7f305e2);rgb(253, 255, 192)rgb(237, 245, 15)
+}
+
+#para{
+    margin-top: 2rem;
+    font-size: 20px;
+    color: #fff;
+}
+
+#para span{
+    color: #fffb02;
 }
