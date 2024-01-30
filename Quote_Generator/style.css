@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    background: rgb(106, 212, 247);
+    width: 100%;
+}
+
+.quote-box{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 10px 20px 0px rgb(0, 0, 0, 0.15);
+    min-width: 35vw;
+}
+
+.quote-box h2{
+   font-size: 32px;
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.quote-box h2::after{
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: #3d3dfa;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 120px;
+}
+
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    border-radius: 2px;
+    left: -25px;
+    top: 50%;
+    background: #3d3dfa;
+    transform: translateX(-50%);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 1px solid rgb(23, 124, 129);
+    outline: 0;
+    border-radius: 23px;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    background-color: #3d3dfa;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#tweet {
+    color: black;
+    background: #fff;
+    border: 1px solid #000000;
+}
+
+#tweet img{
+    width: 25px;
+    border-radius: 25px;
+    margin-right: 10px;
+    color: #000000;
+}
+
