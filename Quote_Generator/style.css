@@ -8,7 +8,7 @@
 }
 
 body{
-    background: rgb(106, 212, 247);
+    background: #6ad4f7;
     width: 100%;
 }
 
@@ -22,7 +22,7 @@ body{
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
-    box-shadow: 0px 10px 20px 0px rgb(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 20px 0px #00000026;
     min-width: 35vw;
 }
 
@@ -38,7 +38,7 @@ body{
     width: 75px;
     height: 3px;
     border-radius: 3px;
-    background: #3d3dfa;
+    background: #177ce5;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -68,7 +68,7 @@ body{
     border-radius: 2px;
     left: -25px;
     top: 50%;
-    background: #3d3dfa;
+    background: #177ce5;
     transform: translateX(-50%);
 }
 
@@ -81,13 +81,13 @@ body{
 
 .btn{
     padding: 10px 20px;
-    border: 1px solid rgb(23, 124, 129);
+    border: 1px solid #177ce5;
     outline: 0;
     border-radius: 23px;
     color: #fff;
     width: 150px;
     height: 50px;
-    background-color: #3d3dfa;
+    background-color: #177ce5;
     margin: 5px;
     display: flex;
     align-items: center;
@@ -95,9 +95,9 @@ body{
     cursor: pointer;
 }
 
-#tweet {
-    color: black;
-    background: #fff;
+.quote-box button:nth-child(2) {
+    color: #000000;
+    background: transparent;
     border: 1px solid #000000;
 }
 
@@ -107,4 +107,5 @@ body{
     margin-right: 10px;
     color: #000000;
 }
+
 
