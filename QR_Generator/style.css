@@ -33,6 +33,12 @@ body{
     background-color: #eaeaea;
 }
 
+.img_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #btn{
     padding: 1rem 2rem;
     background: linear-gradient(#0000ff, #8989ff);
@@ -43,4 +49,5 @@ body{
     width: 100%;
     color: #ffff;
     font-size: 16px;
+    margin-top: 1rem;
 }
