@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Ubuntu', sans-serif;
 }
 
 #btns{
@@ -56,27 +56,27 @@
 .toast_not{
     min-width: 10rem;
     padding: 1rem 2rem 1rem 0.5rem;
-    background-color: khaki;
     border-radius: 5px 5px 0 0;
     margin: 10px 0;
     display: flex;
     align-items: center;
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
+    box-shadow: 1px 1px 10px 1px #8080809b;
 }
 
 .toast_not i{
-    color: green;
+    color: #008000;
     font-size: 35px;
     margin: 0 16px;
 }
 
 .toast_not.invalid i{
-    color: orange;
+    color: #ffa500;
 }
 
 #error i{
-    color: red;
+    color: #ff0000;
 }
 
 .toast_not::after{
@@ -84,7 +84,7 @@
     position: absolute;
     width: 100%;
     height: 5px;
-    background: green;
+    background: #008000;
     left: 0;
     bottom: 0;
     animation: anim 5s linear forwards;
