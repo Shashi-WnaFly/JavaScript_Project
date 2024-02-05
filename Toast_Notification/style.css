@@ -20,6 +20,23 @@
     border-radius: 5px;
     color: #fff;
     background-color: #212121e2;
+    box-shadow: 0px 4px #9b9b9b;
+    cursor: pointer;
+}
+
+#inval:hover{
+    box-shadow: 0px 4px #ffa500;
+    border: 1px solid #ffa500;
+}
+
+#err:hover{
+    box-shadow: 0px 4px #ff0000;
+    border: 1px solid #ff0000;
+}
+
+#success:hover{
+    box-shadow: 0px 4px #008000;
+    border: 1px solid #008000;
 }
 
 .btn:active{
@@ -38,19 +55,20 @@
 
 .toast_not{
     min-width: 10rem;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem 0.5rem;
     background-color: khaki;
     border-radius: 5px 5px 0 0;
     margin: 10px 0;
     display: flex;
     align-items: center;
     position: relative;
+    font-size: 18px;
 }
 
 .toast_not i{
     color: green;
-    font-size: 30px;
-    margin-right: 8px;
+    font-size: 35px;
+    margin: 0 16px;
 }
 
 .toast_not.invalid i{
@@ -69,7 +87,7 @@
     background: green;
     left: 0;
     bottom: 0;
-    animation: anim 5s ease-in-out forwards;
+    animation: anim 5s linear forwards;
 }
 
 #error::after{
