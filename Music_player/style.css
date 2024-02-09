@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary_c: #FFDCDF;
+    --secondary_c: #D13C7B;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music_player{
+    width: 400px;
+    height: 600px;
+    background-color: var(--primary_c);
+}
+
+.top_btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 2rem;
+}
+
+.top_btn i{
+    background-color: #fff;
+    color: var(--secondary_c);
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 16px;
+    box-shadow: 2px 5px 10px #d89bb5;
+}
