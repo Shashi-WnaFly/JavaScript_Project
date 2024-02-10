@@ -24,7 +24,7 @@ body{
 }
 
 h1{
-    color: #fff;
+    color: #09f0bb;
     font-size: 5rem;
 }
 
@@ -33,14 +33,20 @@ h1{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 4rem;
-    width: 60%;
+    width: 50%;
+    min-width: 375px
 }
 
 .btn{
     cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgb(157, 245, 228);
 }
 
 #play_pause{
     transform: scale(1.5);
 }
 
+.btn:active{
+    box-shadow: none;
+}
