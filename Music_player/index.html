@@ -6,6 +6,7 @@
     <title>Music Player</title>
     <script src="https://kit.fontawesome.com/8abf8d0674.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -18,12 +19,13 @@
                 <div><img src="./song/Animal preteaser.jpg" class="song_img"></div>
                 <h3 class="song_name">Pehle Bhi Main</h3>
                 <p class="singer">Vishal Mishra</p>
-                <!-- <audio src="./song/Pehle Bhi Main-(PagalWorld.Com.IN).mp3" controls></audio> -->
-                <audio controls id="song">
+                <audio id="song">
                     <source src="./song/Pehle Bhi Main-(PagalWorld.Com.IN).mp3" type="audio/mpeg">
                 </audio>
             </div>
+
             <input type="range" id="scroler">
+            
             <div class="controls">
                 <div><i class="fa-solid fa-backward"></i></div>
                 <div id="play_pause"><i class="fa-solid fa-play" id="play_pauseIcon"></i></div>
