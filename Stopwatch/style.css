@@ -12,7 +12,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    -webkit-filter: url(./images/Acer_Wallpaper_04_3840x2400.jpg);
+    
 }
 
 .stopwatch{
@@ -44,10 +44,10 @@ h1{
     border-radius: 50%;
 }
 
-#play_pause{
-    transform: scale(1.5);
+#play{
+    width: 105px;
 }
 
 .btn:active{
-    filter: none;
+    transform: scale(0.97);
 }
