@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #450057;
+}
+
+.inp_field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20rem;
+    height: 50px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+#pssword{
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    caret-color: cadetblue;
+}
+
+#eyeIcon{
+    background: #fff;
+    border-radius: 10px;
+    width: 30px;
+    margin: 10px;
+}
