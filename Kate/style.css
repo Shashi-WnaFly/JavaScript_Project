@@ -10,11 +10,9 @@
     --dark-oro: #FF521F;
 }
 
-.wb{
-    :root{
-        --primary-color: #212121;
-        --secondary-color: #EDF1FD;
-    }
+.dark-theme{
+    --primary-color: #212121;
+    --secondary-color: #EDF1FD;
 }
 
 .container{
@@ -23,6 +21,7 @@
     background: var(--primary-color);
     position: relative;
     font-family: "Poppins", sans-serif;
+    color: var(--secondary-color);
 }
 
 .navbar{
@@ -43,7 +42,7 @@
 }
 
 .navbar ul a{
-    color: #76777A;
+    color: var(--secondary-color);
     display: inline-flex;
     align-items: center;
     flex-direction: row;
