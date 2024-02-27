@@ -117,6 +117,26 @@
     height: 100%;
 }
 
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 7rem;
+    font-size: 25px;
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+}
+
+.link i{
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.link i:hover{
+    color: var(--dark-oro);
+}
+
 #pattern{
     transition: bottom 1s;
 }
@@ -132,3 +152,4 @@
 .image:hover #girl{
     left: 45%;
 }
+
