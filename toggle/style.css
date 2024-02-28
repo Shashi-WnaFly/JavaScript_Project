@@ -11,7 +11,11 @@ body{
     background: #0066ff;
     min-height: 100vh;
     width: 100%;
-    /* transition: background 1s ease-out; */
+    transition: background 1s ease-out;
+}
+
+.back{
+    background: #212121;
 }
 
 .btn{
@@ -27,6 +31,9 @@ body{
     cursor: pointer;
 }
 
+.btn_m{
+    background: #d0c202;
+}
 
 .roundBtn{
     width: 59px;
@@ -43,14 +50,6 @@ body{
 .right{
     left: 60%;
     right: 0%;
+    background: #fff;
+    border: 4px solid #d0c202;
 }
-
-/* .btn:hover, body{
-    background: #212121;
-} */
-
-
-
-/* .roundBtn:hover{
-    
-} */
