@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 10px;
+    font-size: 16px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -16,19 +16,20 @@
 }
 
 form{
-    width: 300px;
-    height: 250px;
+    width: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 2rem;
     background: #fff;
     position: relative;
+    border-radius: 10px;
 }
 
 .paper{
-    width: 30px;
-    height: 30px;
+    width: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,37 +39,45 @@ form{
     border-radius: 50%;
     top: -1px;
     background-color: #fff;
-    box-shadow: 0px 1px 5px gray;
+    box-shadow: 0px 5px 10px #b9b7b7;
 }
 
-form i{
+::placeholder{
+    font-size: 14px;
+}
+
+.paper i{
     color: #008cff;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .tip-top{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .input-group{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
 }
 
-.input-group input {
+.input-group input, textarea {
     border: none;
-    border-bottom: 1.5px solid #bab9b9;
+    border-bottom: 2px solid #bab9b9;
     outline: none;
+    width: 230px;
 }
 
-.input-group textarea{
-    border: none;
-    border-bottom: 1.5px solid #bab9b9;
-    outline: none;
+.input-group span{
+    position: absolute;
+    color: red;
+    font-size: 8px;
+    right: 5px;
+    bottom: 2px;
 }
 
 #subBtn{
-    width: 100px;
+    width: 150px;
     border: none;
     outline: none;
     padding: 0.5rem 1rem;
@@ -77,6 +86,7 @@ form i{
     margin: 0 auto;
     cursor: pointer;
     background: linear-gradient(#4186f58e, #0091ff);
+    box-shadow: 0px 2px 5px #bcbaba;
 }
 
 #subBtn:active{
