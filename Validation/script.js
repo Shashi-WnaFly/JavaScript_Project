@@ -50,7 +50,7 @@ function validateEmail(){
         email_err.style.color = 'red';
         return false;
     }
-    if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+    else if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
         email_err.innerHTML = 'invalid email';
         email_err.style.color = 'red';
         return false;
