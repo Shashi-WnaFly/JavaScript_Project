@@ -11,7 +11,7 @@ function validateName(){
         name_err.style.color = 'red'
         return false;
     }
-    if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+    else if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
         name_err.innerHTML = 'Write full name';
         name_err.style.color = 'red'
         return false;
@@ -33,7 +33,7 @@ function validatePhone(){
         phone_err.style.color = 'red'
         return false;
     }
-    else if(phone.match(/^[0-9]{10}$/)){
+    else if(!phone.match(/^[0-9]{10}$/)){
         phone_err.innerHTML = 'phone no. is required';
         phone_err.style.color = 'red'
         return false;
@@ -74,10 +74,15 @@ function validateMsg(){
 }
 
 function validateForm(){
-    let subBtn = document.getElementById('subBtn');
-    if(validateMsg() && validateEmail() && validatePhone() && validateName()){
-        alert('Your form successfully submitted.')
+    
+    if(!validateName() || !validatePhone() || !validateEmail() || !validateMsg()){
+        submit_err.style.display = 'block';
+        submit_err.innerHTML = 'Please fix some error';
+        submit_err.style.color = 'red';
+        setTimeout( ()=>{
+            submit_err.style.display = 'none';
+        }, 3000)
+        return false;
     }
-    submit_err.innerHTML = 'Please fix some error';
-    submit_err.style.color = 'red';
 }
+
