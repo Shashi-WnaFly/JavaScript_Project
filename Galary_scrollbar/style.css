@@ -29,6 +29,7 @@ body{
     gap: 20px;
     padding: 10px;
     flex: none;
+    position: relative;
 }
 
 .galary div img{
