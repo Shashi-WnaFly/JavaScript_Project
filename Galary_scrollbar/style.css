@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.galary{
+    display: flex;
+    width: 900px;
+    overflow-x: scroll;
+}
+
+.galary::-webkit-scrollbar{
+    display: none;
+}
+
+.galary div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.galary div img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100);
+    transition: transform 0.5s;
+}
+
+.galary div img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.scrolBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+#nextBtn, #backBtn{
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
