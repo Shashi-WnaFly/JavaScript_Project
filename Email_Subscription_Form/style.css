@@ -54,9 +54,15 @@
     background-color: green;
     padding: 1rem 1.5rem;
 }
+
 .front_page button{
     border: none;
     outline: none;
     cursor: pointer;
     height: 4rem;
+}
+
+.front_page span{
+    margin-left: 8%;
+    color: #02b002;
 }
