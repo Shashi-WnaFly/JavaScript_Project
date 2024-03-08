@@ -6,20 +6,20 @@ pass.addEventListener('input', ()=>{
     if(pass.value.length <= 4){
         msg.style.display = 'block';
         span.innerHTML = 'Weak';
-        msg.style.color = 'red';
-        pass.style.borderColor = 'red';
+        msg.style.color = '#ff2600';
+        pass.style.borderColor = '#ff2600';
     }
     else if(pass.value.length <= 6){
         msg.style.display = 'block';
         span.innerHTML = 'Medium';
-        msg.style.color = 'orange';
-        pass.style.borderColor = 'orange';
+        msg.style.color = '#ffea00';
+        pass.style.borderColor = '#ffea00';
     }
     else if(pass.value.length >= 8){
         msg.style.display = 'block';
         span.innerHTML = 'Strong';
-        msg.style.color = 'green';
-        pass.style.borderColor = 'green';
+        msg.style.color = '#1ec71e';
+        pass.style.borderColor = '#1ec71e';
     }
     else{
         msg.style.display = 'none';
