@@ -9,8 +9,11 @@
 </head>
 <body>
     <div class="container">
-        <input type="text" id="password" type="password" placeholder="password">
-        <img src="./images/right-arrow.png" id="arrow">
+        <div class="input_box">
+            <input type="password" id="password" placeholder="password">
+            <button type="submit" id="submit"  onclick="pass_submit()"><img src="./images/right-arrow.png" id="arrow"></button>
+            <p id="msg">Password is <span id="spn_msg"></span></p>
+        </div>
     </div>
 </body>
 </html>

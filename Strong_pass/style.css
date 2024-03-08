@@ -12,28 +12,53 @@
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.input_box{
+    min-width: 400px;
+    padding: 1rem;
     position: relative;
 }
 
 #password{
-    width: 20rem;
-    padding: 1rem 2rem;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    padding-left: 2rem;
     outline: 0;
-    border: 0;
-    font-size: 16px;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
 ::placeholder{
     font-size: 18px;
+    color: #ffffff94;
+}
+
+#submit{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 22px;
+    right: 2px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #arrow{
-    position: absolute;
-    transform: translateX(470%);
-    top: 48%;
-    width: 30px;
-    background-color: #fff;
-    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
+.container p{
+    display: none;
+    color: #fff;
 }
