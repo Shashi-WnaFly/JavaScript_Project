@@ -1,6 +1,7 @@
 let pass = document.querySelector('#password');
 let msg = document.getElementById('msg');
 let span = document.getElementById('spn_msg');
+let sub = document.querySelector('#submit');
 
 pass.addEventListener('input', ()=>{
     if(pass.value.length <= 4){
@@ -26,6 +27,6 @@ pass.addEventListener('input', ()=>{
     }
 })
 
-function pass_submit(){
+sub.addEventListener('click', ()=>{
     pass.innerHTML = '';
-}
+})

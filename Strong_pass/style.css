@@ -42,9 +42,8 @@
 
 #submit{
     position: absolute;
-    transform: translateX(-50%);
-    top: 22px;
-    right: 2px;
+    top: 24px;
+    right: 20px;
     padding: 8px;
     background-color: #fff;
     border-radius: 50%;
@@ -54,8 +53,8 @@
 }
 
 #arrow{
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
 .container p{
