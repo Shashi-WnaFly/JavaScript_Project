@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: "Poppins", sans-serif;
 }
 
 .container{
@@ -22,7 +22,7 @@
 }
 
 .container h1 span{
-    color: #dc0c78;
+    color: #bd03f5ee;
     padding: 4px 0;
     border-bottom: 4px solid #fff;
 }
@@ -33,7 +33,50 @@ textarea{
     height: 300px;
     outline: 0;
     border-radius: 10px;
-    background: rgba(132, 210, 149, 0.491);
+    background: #84d2957d;
     font-size: 16px;
     color: #fff;
+    margin-bottom: 30px;
 }
+
+textarea::placeholder{
+    color: #46f758;
+}
+
+.row{
+    width: 450px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.row button{
+    outline: 0;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    background-color: #bd03f5ee;
+}
+
+.row button img{
+    width: 25px;
+    background-color: #fff;
+}
+
+.row select{
+    flex: 1;
+    padding: 8px 24px;
+    appearance: none;
+    outline: none;
+    background-image: url(./images/down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 10px;
+}
+
