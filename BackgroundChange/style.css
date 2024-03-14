@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.container{
+    background: #e5f3f6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_box{
+    width: 65%;
+    background-image: url(./background_change_img/background.png);
+    margin: auto;
+    line-height: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .img_box img{
+    width: 100%;
+} */
+
+.img_org{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+/* 
+.img_org img{
+    width: 100%;
+} */
