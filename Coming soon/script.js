@@ -1,4 +1,4 @@
-let countDownDate = new Date("April 1, 2024 00:00:00").getTime();
+let countDownDate = new Date("March 14, 2024 00:00:00").getTime();
 
 let left = setInterval( ()=> {
     let now = new Date();
@@ -12,5 +12,12 @@ let left = setInterval( ()=> {
     document.getElementById('hour').innerHTML = hr;
     document.getElementById('min').innerHTML = min;
     document.getElementById('sec').innerHTML = sec;
+    
+    if(dis < 0){
+        document.getElementById('day').innerHTML = "0";
+        document.getElementById('hour').innerHTML = "0";
+        document.getElementById('min').innerHTML = "0";
+        document.getElementById('sec').innerHTML = "0";
+    }
     
 }, 1000)
