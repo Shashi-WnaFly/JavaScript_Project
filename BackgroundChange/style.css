@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 .container{
@@ -14,7 +14,7 @@
 }
 
 .img_box{
-    width: 65%;
+    width: 60%;
     background-image: url(./background_change_img/background.png);
     margin: auto;
     line-height: 0;
@@ -22,9 +22,23 @@
     overflow: hidden;
 }
 
-/* .img_box img{
-    width: 100%;
-} */
+#hor-line{
+    width: 1px;
+    color: #ffffff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: ew-resize;
+}
+
+#arrow{
+    position: absolute;
+    width: 40px;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
 
 .img_org{
     position: absolute;
