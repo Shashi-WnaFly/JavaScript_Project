@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 .container{
@@ -52,9 +51,11 @@
     font-size: 100px;
     line-height: 90px;
     font-weight: 600;
+    font-family: "Federo", sans-serif;
 }
 
 #day, #year, #month{
     font-size: 25px;
     font-weight: 500;
+    font-family: "Cabin", sans-serif;
 }
