@@ -39,7 +39,7 @@
     rotate: 180deg;
 }
 
-.soc_list{
+#soc_list{
     border-radius: 5px;
     width: 300px;
     height: fit-content;
