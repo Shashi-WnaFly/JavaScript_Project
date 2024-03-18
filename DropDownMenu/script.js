@@ -4,7 +4,11 @@ let caret = document.querySelector('#caret');
 let items = document.getElementsByClassName('items');
 let sel_media = document.getElementById('sel_media');
 
-list.classList.toggle('hide');
+function refresh (){
+    list.classList.toggle('hide');
+}
+
+refresh();
 
 sel.onclick = ()=>{
     caret.classList.toggle('rotate');
