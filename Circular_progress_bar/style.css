@@ -16,6 +16,7 @@
 
 .health{
     width: 300px;
+    position: relative;
     height: 300px;
 }
 
@@ -35,5 +36,35 @@
     margin: auto;
     box-shadow: inset 5px 5px 7px -1px rgba(0,0,0, 0.1),
                 inset -5px -5px 7px -1px rgba(255,255,255, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#score{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+circle{
+    fill: none;
+    stroke-width: 45px;
+    stroke: url(#GradientColor);
+    stroke-dasharray: 793;
+    stroke-dashoffset: 793;
+    animation: prog 2s linear forwards;
+}
+
+@keyframes prog{
+    100%{
+        stroke-dashoffset: 277.5;
+    }
 }
 
