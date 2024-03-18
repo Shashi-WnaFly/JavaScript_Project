@@ -10,7 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(0deg, #0066ffca, #ffae00);
+    /* background: linear-gradient(0deg, #0066ffca, #ffae00); */
+    background: rgb(232, 229, 229);
 }
 
 .health{
@@ -22,5 +23,17 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    
+    box-shadow: 6px 6px 8px -1px rgba(0,0,0, 0.1),
+                -6px -6px 8px -1px rgba(255,255,255, 0.5);
+    padding: 45px;
 }
+
+.inner{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: inset 5px 5px 7px -1px rgba(0,0,0, 0.1),
+                inset -5px -5px 7px -1px rgba(255,255,255, 0.5);
+}
+
