@@ -15,20 +15,125 @@
 }
 
 .prod_page{
-    width: 45%;
-    height: 70vh;
+    width: 90%;
+    max-width: 750px;
     display: flex;
-
 }
 
 .product{
-    width: 50%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-basis: 47%;
     background-color: #212121;
+    /* transform: scale(1.06); */
 }
 .product img{
-    width: 300px;
-    height: 400px;
+    display: block;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.prod_details{
+    background: #fff;
+    padding: 2rem;
+}
+.prod_details h1{
+    font-weight: 800;
+}
+.prod_details h3{
+    color: #00d874;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.prod_details p{
+    font-size: 14px;
+}
+
+.size_select p{
+    width: 70px;
+}
+.size_select{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.size_select label{
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.size_select label input:checked + span{
+    color: #0059ff;
+    font-weight: 600;
+}
+
+.size_select label input{
+    display: none;
+}
+
+.color_select{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.color_select p{
+    width: 75px;
+}
+
+.color_select label span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.color_select label input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.color_select label input{
+    display: none;
+}
+
+.color-1{
+    background: #db0125;
+}
+.color-2{
+    background: #00d874;
+}
+.color-3{
+    background: blue;
+}
+.color-4{
+    background: rgb(227, 227, 1);
+}
+
+.qty{
+    display: flex;
+    width: 75px;
+    margin-top: 20px;
+}
+
+.qty input{
+    width: 40px;
+    margin-left: 28px;
+}
+
+form button{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 17px;
+    color: #fff;
+    background-color: #553ff0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(85,63,280,0.25);
 }
