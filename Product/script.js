@@ -1,10 +1,5 @@
 let prod_img = document.querySelector('#prod_img');
-let control = document.querySelector('.controls');
 let btn = document.getElementsByClassName('btn');
-
-// for(bt of btn){
-//     console.log(bt);
-// }
 
 btn[0].onclick = ()=>{
     prod_img.src = './images/image1.png';
@@ -12,7 +7,7 @@ btn[0].onclick = ()=>{
     for(bt of btn){
         bt.classList.remove("active");
     }
-    this.classList.add("active");
+    btn[0].classList.add("active");
 }
 
 btn[1].onclick = ()=>{
@@ -21,7 +16,7 @@ btn[1].onclick = ()=>{
     for(bt of btn){
         bt.classList.remove("active");
     }
-    this.classList.add("active");
+    btn[1].classList.add("active");
 }
 
 btn[2].onclick = ()=>{
@@ -30,5 +25,5 @@ btn[2].onclick = ()=>{
     for(bt of btn){
         bt.classList.remove("active");
     }
-    this.classList.add("active");
+    btn[2].classList.add("active");
 }
