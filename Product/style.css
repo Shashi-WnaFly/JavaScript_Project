@@ -23,6 +23,7 @@
 .product{
     flex-basis: 47%;
     background-color: #212121;
+    position: relative;
     /* transform: scale(1.06); */
 }
 .product img{
@@ -34,6 +35,7 @@
 .prod_details{
     background: #fff;
     padding: 2rem;
+    width: 53%;
 }
 .prod_details h1{
     font-weight: 800;
@@ -42,7 +44,7 @@
     color: #00d874;
     font-size: 14px;
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .prod_details p{
     font-size: 14px;
@@ -54,7 +56,7 @@
 .size_select{
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .size_select label{
@@ -72,14 +74,14 @@
 }
 
 .color_select{
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     align-items: center;
     width: 100%;
 }
 
 .color_select p{
-    width: 75px;
+    width: 70px;
 }
 
 .color_select label span{
@@ -116,18 +118,22 @@
 .qty{
     display: flex;
     width: 75px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .qty input{
-    width: 40px;
+    width: 50px;
     margin-left: 28px;
+    background: #eee;
+    border: 0;
+    padding: 0;
+    padding: 2px 2px 2px 10px;
 }
 
 form button{
     width: 100%;
     padding: 1rem;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 30px;
     font-size: 17px;
     color: #fff;
@@ -136,4 +142,24 @@ form button{
     outline: 0;
     cursor: pointer;
     box-shadow: 0 10px 10px rgba(85,63,280,0.25);
+}
+
+.controls{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
+
+.btn{
+    display: block;
+    background: rgba(255,255,255,0.5);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #553ff0;
 }
